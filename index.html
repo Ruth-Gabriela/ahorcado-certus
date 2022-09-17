@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main class="main-container">
+
+        <section class="container-img">
+            <h1 class="title">Bienvenido al juego!!!</h1>
+            
+            <span class="text-welcome">Adivina la fruta: Es un juego muy popular y divertido.</span>
+            <div class="ahorcado-img"> </div>
+        </section>
+
+        <section class="container-game">
+            <h1 class="title-two">AHORCADO</h1>
+            <span class="text"> Comienza ahora, tienes 5 intentos para adivinar la palabra escondida.</span>
+            <span class="text">Pista: La palabra escondida es una fruta muy conocida y tiene como caracter la letra "a".</span>
+            <p class="guess-word">
+                <span class="one-character" id="one-character"></span>
+            </p>
+
+            <div class="container-characters">
+                <h4 class="text">Ingresa una letra:</h4>
+                <input type="text" placeholder="Aqui" maxlength="1" id="letra" class="letra" required>
+                <button class="button-word" id="button-word">Evaluar letra</button>
+            </div>
+
+        </section>
+
+        <!-- Contenedor Modal -->
+        <section id="modal" class="modalHide">
+            <div class="modal-container">
+                <img src="https://i.imgur.com/gHFOw7T.png" id="img-modal" alt="img-modal">
+                <h3 id="title-modal"></h3>
+                <span id="text-modal"></span>
+                <a href="./index.html" id="close-modal">Volver a jugar</a>
+            </div>
+        </section>
+
+    </main>
+    <script src="./index.js" > </script>
+</body>
+
+</html>
